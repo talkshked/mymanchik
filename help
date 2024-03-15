@@ -1,0 +1,35 @@
+// Helper function to calculate the area of a triangle
+function calculateTriangleArea(base, height) {
+  return 0.5 * base * height;
+}
+
+// Helper function to check if a number is a palindrome
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
+
+// Helper function to generate a random number between min and max (inclusive)
+function generateRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to check if a number is a perfect square
+function isPerfectSquare(number) {
+  return Math.sqrt(number) % 1 === 0;
+}
+
+// Example usage
+const triangleBase = 6;
+const triangleHeight = 8;
+console.log(`Area of a triangle with base ${triangleBase} and height ${triangleHeight} is:`, calculateTriangleArea(triangleBase, triangleHeight));
+
+const palindromeString = "radar";
+console.log(`"${palindromeString}" is a palindrome:`, isPalindrome(palindromeString));
+
+const minRandomInt = 1;
+const maxRandomInt = 100;
+console.log(`Random integer between ${minRandomInt} and ${maxRandomInt} is:`, generateRandomNumber(minRandomInt, maxRandomInt));
+
+const perfectSquareNumber = 25;
+console.log(`${perfectSquareNumber} is a perfect square:`, isPerfectSquare(perfectSquareNumber));
